@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src = esgrito.js></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let s = "", v=1;
+         while(v != null){
+        v = prompt('ingrese texto:');
+        if(v!=null && v.length >= 1 && v.length <= 1000){
+            if(EsGrito(v)){
+                s = s + "ESGRITO <br> ";
+            }
+            else {
+                s = s + "escrito <br> ";
+            }
+    }
+}
+        document.write(s);
+
+
+        </script>
+</body>
+</html>
